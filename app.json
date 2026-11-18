@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Reservas Deportivas",
+    "slug": "reservas-deportivas",
+    "description": "Consultá la disponibilidad y gestioná tus reservas deportivas desde el celular.",
+    "version": "1.0.0",
+    "primaryColor": "#E53935",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "reservasdeportivas",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.reservasdeportivas.app",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.reservasdeportivas.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#15191F",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "@react-native-vector-icons/ionicons",
+      "expo-sqlite",
+      "expo-secure-store",
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
